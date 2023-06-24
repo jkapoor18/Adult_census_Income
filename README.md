@@ -1,0 +1,1 @@
+This end-to-end project is made as a part of data science internship for Ineuron.ai.

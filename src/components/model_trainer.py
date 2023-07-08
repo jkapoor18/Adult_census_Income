@@ -17,7 +17,7 @@ from src.utils import evaluate_models
 
 @dataclass
 class ModelTraningConfig:
-    train_model_file_obj = os.path.join("artifcats","model.pkl")
+   trained_model_file_path = os.path.join('artifacts','model.pkl')
 
 
 class ModelTraning:
@@ -80,7 +80,7 @@ class ModelTraning:
             print("\n***************************************************************************************\n")
             logging.info(f"Best Model Found, Model Name is: {best_model_name},Accuracy_Score: {best_model_score}")
 
-            save_object(file_path=self.model_traner_config.train_model_file_obj,
+            save_object(file_path=self.model_traner_config.trained_model_file_path,
                 obj = best_model
                 )
 

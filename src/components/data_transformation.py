@@ -8,6 +8,7 @@ from dataclasses import dataclass
 
 from sklearn.preprocessing import StandardScaler
 from sklearn.impute import SimpleImputer
+from sklearn.model_selection import train_test_split
 #pipline
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
@@ -17,9 +18,9 @@ from src.utils import save_object
 
 @dataclass
 class DataTransformationConfig:
-    preprocessor_obj_file_path = os.path.join("artifcats","preprocessor.pkl")
-    #train_data_path:str=os.path.join('artifacts','train.csv')
-    #test_data_path:str=os.path.join('artifacts','test.csv')
+    preprocessor_obj_file_path=os.path.join('artifacts','preprocessor.pkl')
+    train_data_path:str=os.path.join('artifacts','train.csv')
+    test_data_path:str=os.path.join('artifacts','test.csv')
 
 
 #Create Data TRansdormation Class

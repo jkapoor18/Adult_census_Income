@@ -33,7 +33,7 @@ class DataTransformation:
         try:
             logging.info("Data Transformation Started")
 
-            numerical_features = ['age',  'education-num']
+            numerical_features = ['age',  'education_num']
 
             logging.info("Pipline Started")
 
